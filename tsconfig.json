@@ -1,0 +1,21 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*"],
+  "types": ["svelte", "node", "@sapper"], // add the last two to the existing types
+  "typeRoots": ["typings"], // add line
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": ["svelte", "node", "@sapper"], // add the last two to the existing types
+    "typeRoots": ["typings"], // add line
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "strict": true
+  }
+}
