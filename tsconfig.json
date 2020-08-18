@@ -1,12 +1,12 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "jest.config.js"],
   "exclude": ["node_modules/*"],
   "types": ["svelte", "node", "@sapper"], // add the last two to the existing types
   "typeRoots": ["typings"], // add line
   "compilerOptions": {
     "module": "esnext",
     "moduleResolution": "node",
-    "types": ["svelte", "node", "@sapper"], // add the last two to the existing types
+    "types": ["svelte", "node", "@sapper", "@types/jest"],
     "typeRoots": ["typings"], // add line
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,

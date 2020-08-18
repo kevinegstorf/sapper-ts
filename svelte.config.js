@@ -5,5 +5,17 @@ module.exports = {
   preprocess: sveltePreprocess({
     // ...svelte-preprocess options (optional)
   }),
+  transform: {
+    "^.+\\.js$": "babel-jest",
+    "^.+\\.svelte$": [
+      "svelte-jester",
+      {
+        preprocess: false,
+        debug: false,
+        compilerOptions: {},
+        rootMode: "",
+      },
+    ],
+  },
   // ...other svelte options (optional)
 };
